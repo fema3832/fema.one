@@ -1,0 +1,125 @@
+/* created by: fema3832
+social: github, steam, twitter, twitch, youtube
+don't delete this comment, thanks */
+
+@font-face {
+  font-family: dina;
+  src: url(font.ttf);
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  color: rgb(227, 227, 227);
+  font-family: dina;
+  user-select: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(227, 227, 227);
+}
+
+a, p {
+  text-shadow: 0.05vh 0.05vh black;
+}
+
+.topsection, .contactsec {
+  color: rgb(245, 245, 220)
+}
+
+/*MEDIA SUPPORT*/
+
+@media (max-width: 43.9em) {
+
+  .contactsec {
+    top: 88.5%!important;
+  }
+
+}
+
+@media (max-width: 36.3em) {
+
+  .contactsec {
+    top: 86.8%!important;
+  }
+
+}
+
+/*TOP SCREEN
+==========================*/
+
+.topsection p {
+  position: absolute;
+  line-height: 2.5vh;
+  font-size: 2.14vh;
+  left: 0;
+  right: 0;
+  top: 1%;
+}
+
+/*TITLE SECTION
+==========================*/
+
+.title {
+  color: rgb(245, 245, 220);
+  position: absolute;
+  font-size: 4.3vh;
+  left: 0;
+  right: 0;
+  top: 36%;
+}
+
+.infosec {
+  position: absolute;
+  font-size: 2.14vh;
+  line-height: 3vh;
+  left: 0;
+  right: 0;
+  top: 46%
+}
+
+.infosec a {
+  transition: 200ms;
+  margin-right: 1.5vh;
+}
+
+.infosec a:hover {
+  color: rgb(160, 87, 255);
+  transition: 200ms;
+  font-size: 2.35vh;
+}
+
+/*CONTACT SECTION
+==========================*/
+
+.contactsec {
+  position: absolute;
+  font-size: 1.92vh;
+  line-height: 2.5vh;
+  left: 0;
+  right: 0;
+  top: 90.2%;
+}
+
+/*LINE SECTION
+==========================*/
+
+.hr1 {
+  position: absolute;
+  white-space: normal;
+  width: 40%;
+  top: 1%;
+  left: 0;
+  right: 0;
+}
+
+.hr2 {
+  position: absolute;
+  white-space: normal;
+  width: 40%;
+  top: 97%;
+  left: 0;
+  right: 0;
+}
