@@ -12,15 +12,5 @@ function delay(delayInms) {
     });
 }
 
-document.onkeydown = function (e) {
-	if (event.keyCode == 123)
-	    return false;
-        else if (e.ctrlKey && e.shiftKey && e.keyCode == 73)
-            return false;
-        else if (e.ctrlKey && e.keyCode == 73)
-            return false;
-        else if (e.ctrlKey && e.shiftKey && e.keyCode == 74)
-            return false;
-        else if (e.ctrlKey && e.keyCode == 74)
-            return false;
-};
+    console.log("\n%c%cWelcome to fema.one \ud83d\udc96\n","font-weight: bold; font-size: 20px; color: #ad6edd; text-shadow: 1px 1px 4px black",
+    "font-weight: bold; font-size: 50px; color: #ad6edd; text-shadow: 1px 1px 4px black")
