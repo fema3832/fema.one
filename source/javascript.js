@@ -24,6 +24,10 @@ function statusp() {
     window.open('https://status.fema.one/','_blank')
 }
 
+function discord() {
+    alert("Fema#6182")
+}
+
 const checkbox = document.getElementById('switcher');
 checkbox.addEventListener('change', (e) => {
     if (e.target.checked) {
