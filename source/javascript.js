@@ -17,7 +17,7 @@ function twitter() {
 }
 
 function email() {
-    window.open('mailto:fema3832@gmail.com');
+    window.location.href = 'mailto:fema3832@gmail.com';
 }
 
 function statusp() {
