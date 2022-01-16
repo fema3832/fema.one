@@ -1,0 +1,290 @@
+@font-face {
+    font-family: montserrat;
+    src: url(./montserrat.ttf);
+}
+
+/*Color stuffs
+==========================*/
+
+:root {
+    --text-color: rgb(220, 220, 220);
+    --bg-color: rgb(30, 30, 30);
+    --itembg-color: rgb(25, 25, 25);
+    --hover-color: rgb(0, 210, 190);
+    --update-color: rgb(120, 120, 120);
+    --splash-color: rgb(10, 10, 10);
+}
+
+[data-theme="light"] {
+    --text-color: rgb(20, 20, 20);
+    --bg-color: rgb(240, 240, 240);
+    --itembg-color: rgb(230, 230, 230);
+    --hover-color: rgb(0, 190, 170);
+    --update-color: rgb(130, 130, 130);
+    --splash-color: rgb(255, 255, 255);
+}
+
+/*Main stuffs
+==========================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    margin: 0%;
+}
+
+a, h1, h2, p, li, img {
+    color: var(--text-color);
+    font-family: 'montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a, img {
+    cursor: pointer;
+}
+
+a {
+    transition: 150ms ease-out;
+}
+
+a:hover {
+    color: var(--hover-color);
+    transition: 150ms ease-in;
+}
+
+/* Splash stuffs
+============================ */
+
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--splash-color);
+    z-index: 200;
+    text-align: center;
+    line-height: 92vh;
+}
+
+.splash p {
+    font-size: 4vh!important;
+}
+
+.splash.display-none {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -200;
+    text-align: center;
+    transition: all 1s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+/*Header section
+==========================*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--itembg-color);
+    padding: 25px 100px;
+    font-size: 15px;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 35px;
+}
+
+header .home {
+    margin-left: -25px;
+}
+
+/* Switch Section
+============================ */
+
+#colorswitch {
+    position: relative;
+    display: inline-block;
+    width:  4em;
+    height: 1.68em;
+    margin-left: 30px;
+}
+
+.switchtext {
+    position: relative;
+    left: 57em;
+    top: 1.9em;
+}
+
+#colorswitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(70, 70, 70);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    left: 0.4em;
+    bottom: 0.4em;
+    background-color: var(--hover-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--hover-color);
+}
+
+input:checked + .slider::before {
+    background-color: rgb(70, 70, 70);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(2.25em);
+    -ms-transform: translateX(2.25em);
+    transform: translateX(2.25em);
+}
+
+.slider.round {
+    border-radius: 3.68em;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Main Section
+============================ */
+
+main {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    right: 0;
+}
+
+main .title {
+    margin-bottom: 10px;
+}
+
+main .subtitle {
+    margin-bottom: 20px;
+}
+
+/* Socials Section
+============================ */
+
+.socials img {
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+    transition: 200ms ease-in;
+}
+
+.logo1 {
+    background-color: var(--text-color); /* defines the background color of the image */
+    mask: url(/imgs/github.svg) no-repeat center / contain;
+    -webkit-mask: url(/imgs/github.svg) no-repeat center / contain;
+}
+
+.logo2 {
+    background-color: var(--text-color); /* defines the background color of the image */
+    mask: url(/imgs/steam.svg) no-repeat center / contain;
+    -webkit-mask: url(/imgs/steam.svg) no-repeat center / contain;
+}
+
+.logo3 {
+    background-color: var(--text-color); /* defines the background color of the image */
+    mask: url(/imgs/twitter.svg) no-repeat center / contain;
+    -webkit-mask: url(/imgs/twitter.svg) no-repeat center / contain;
+}
+
+.logo4 {
+    background-color: var(--text-color); /* defines the background color of the image */
+    mask: url(/imgs/email.svg) no-repeat center / contain;
+    -webkit-mask: url(/imgs/email.svg) no-repeat center / contain;
+}
+
+.logo5 {
+    background-color: var(--text-color); /* defines the background color of the image */
+    mask: url(/imgs/status.svg) no-repeat center / contain;
+    -webkit-mask: url(/imgs/status.svg) no-repeat center / contain;
+}
+
+.socials img:hover {
+    background-color: var(--hover-color);
+    transition: 200ms ease-out;
+}
+
+/* Update Section
+============================ */
+
+.update {
+    position: absolute;
+    left: 0.5%;
+    bottom: 80px;
+    line-height: 25px;
+}
+
+.update p {
+    color: var(--update-color);
+}
+
+/* Footer Section
+============================ */
+
+footer {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--itembg-color);
+    align-items: center;
+}
+
+footer p {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
