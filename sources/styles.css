@@ -110,6 +110,7 @@ p {
 .pattern {
   background: url("dot.png") repeat;
   position: absolute;
+  opacity: 0.5s;
   height: 5000vh;
   z-index: -199;
   width: 5000vh;
