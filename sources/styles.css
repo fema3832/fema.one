@@ -21,11 +21,13 @@ a {
   color: rgb(227, 227, 227);
 }
 
-a, p {
+a,
+p {
   text-shadow: 0.05vh 0.05vh black;
 }
 
-.topsection, .contactsec {
+.topsection,
+.contactsec {
   color: rgb(245, 245, 220)
 }
 
@@ -34,7 +36,7 @@ a, p {
 @media (max-width: 71em) {
 
   .contactsec {
-    top: 88.5%!important;
+    top: 88.5% !important;
   }
 
 }
@@ -42,7 +44,7 @@ a, p {
 @media (max-width: 36.3em) {
 
   .contactsec {
-    top: 86.8%!important;
+    top: 86.8% !important;
   }
 
 }
@@ -63,7 +65,7 @@ a, p {
 }
 
 .splash p {
-  font-size: 5vh!important;
+  font-size: 5vh !important;
 }
 
 .splash.display-none {
@@ -103,6 +105,15 @@ a, p {
   object-fit: cover;
   filter: blur(10px);
   z-index: -200;
+}
+
+.pattern {
+  background: url("dot.png") repeat;
+  position: absolute;
+  height: 5000vh;
+  width: 5000vh;
+  left: -50vh;
+  top: -50vh;
 }
 
 /*TOP SCREEN
