@@ -111,6 +111,7 @@ p {
   background: url("dot.png") repeat;
   position: absolute;
   height: 5000vh;
+  z-index: -199;
   width: 5000vh;
   left: -50vh;
   top: -50vh;
@@ -155,7 +156,7 @@ p {
 }
 
 .infosec a:hover {
-  color: rgb(160, 87, 255);
+  color: rgb(160, 85, 255);
   transition: 200ms ease-in;
   font-size: 2.35vh;
 }
