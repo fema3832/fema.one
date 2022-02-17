@@ -109,7 +109,7 @@ p {
 
 .pattern {
   background: url('../assets/dot.png') repeat;
-  background-size: 0.1vh 0.1vh;
+  background-size: 0.25vh 0.25vh;
   position: absolute;
   opacity: 0.5;
   height: 5000vh;
