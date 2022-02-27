@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.querySelector(".splash").classList.add("display-none");
+    }, 1000)
+})
+
 window.onload = function() {
     var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;
     document.getElementById("load").innerHTML = "load time: " + loadTime + " ms";
